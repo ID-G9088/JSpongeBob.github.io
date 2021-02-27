@@ -1,0 +1,161 @@
+.footer {
+    background-color: #f7f8f3;
+    text-align: center;
+    font-family: $mainFont;
+    padding-top: 170px;
+
+    &__title {
+        position: relative;
+        font-size: 60px;
+        color: #6e774a;
+        margin-bottom: 50px;
+
+        &:before,
+        &:after {
+            position: absolute;
+            content: "";
+            width: 30%;
+            height: 2px;
+            background-color: #6e774a;
+            top: 50%;
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 800px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__copyright {
+        font-size: 11px;
+        color: #6e774a;
+        font-weight: 300;
+        letter-spacing: 3.08px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+}
+
+.links {
+    &__item {
+        display: block;
+        text-decoration: none;
+        color: #6e774a;
+        font-size: 14px;
+        line-height: 40px;
+        letter-spacing: 3.92px;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-right: -40px;
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 55px;
+        height: 2px;
+        background-color: #6e774a;
+        transform: rotate(90deg);
+        bottom: 40px;
+        left: 40%;
+    }
+
+    &__link {
+        width: 20px;
+        height: 20px;
+        margin-right: 60px;
+
+        @media screen and (max-width: 800px) {
+            margin-right: 30px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__icon {
+        &_facebook {
+            &:hover {
+                fill: blue;
+            }
+        }
+        &_twitter {
+            &:hover {
+                fill: #00acee;
+            }
+        }
+        &_youtube {
+            &:hover {
+                fill: red;
+            }
+        }
+    }
+}
+
+.subscribe {
+    position: relative;
+    margin-bottom: 60px;
+
+    &__label {
+        color: #1c1c1b;
+        line-height: 75px;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        padding: 0 90px 0 30px;
+        width: 370px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 55px;
+        letter-spacing: 4.48px;
+        border: 1px solid #6e774a;
+        background-color: #f7f8f3;
+
+        &:focus {
+            outline: none;
+            border: 2px solid #6e774a;
+        }
+    }
+
+    &__submit {
+        cursor: pointer;
+        position: absolute;
+        content: "";
+        width: 85px;
+        height: 15px;
+        bottom: 5px;
+        left: 58%;
+        padding: 25px;
+        background: url("../images/arrow.png") no-repeat;
+        background-position: center;
+        border: none;
+        border-left: 1px solid #6e774a;
+
+        &:hover {
+            background: #6e774a url("../images/Arrow2.png") no-repeat;
+            background-position: center;
+        }
+    }
+}

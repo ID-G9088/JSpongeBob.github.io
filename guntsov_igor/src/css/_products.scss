@@ -1,0 +1,111 @@
+.products {
+    font-family: $mainFont;
+    text-align: center;
+
+    &__description {
+        border: 1px solid #ced6af;
+        padding-top: 40px;
+        height: 430px;
+
+        @media screen and (max-width: 890px) {
+            max-height: 380px;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 300;
+        color: #1c1c1b;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin-bottom: 75px;
+    }
+
+    &__item {
+        width: 410px;
+        background-color: white;
+        margin-right: 30px;
+    }
+
+    &__rating {
+        margin: 0 auto;
+        max-width: 80px;
+        height: 15px;
+        background: url("../images/star.png");
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        margin-bottom: 35px;
+    }
+
+    &__image {
+        margin: 0 auto;
+
+        @media screen and (max-width: 890px) {
+            max-width: 70%;
+        }
+    }
+
+    &__buy {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f1f1f1;
+    }
+
+    &__price {
+        color: #1c1c1b;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        padding-top: 20px;
+        padding-left: 20px;
+
+        @media screen and (max-width: 710px) {
+            padding: 10px 0;
+        }
+    }
+
+    &__btn {
+        background-color: #6e774a;
+        text-decoration: none;
+        color: white;
+        padding: 25px 100px 25px 40px;
+
+        @media screen and (max-width: 890px) {
+            padding-right: 50px;
+        }
+
+        @media screen and (max-width: 710px) {
+            padding: 25px;
+        }
+
+        @media screen and (max-width: 610px) {
+            padding: 10px;
+        }
+    }
+}
+
+.slick-slide {
+    padding: 0 15px;
+}
+
+.arrows {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    &__prev,
+    &__next {
+        cursor: pointer;
+        background: url("../images/arrowr.png") no-repeat;
+        height: 20px;
+        width: 40px;
+        margin-right: 40px;
+    }
+
+    &__prev {
+        background: url("../images/arrowl.png") no-repeat;
+    }
+}
